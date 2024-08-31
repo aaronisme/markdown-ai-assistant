@@ -1,71 +1,37 @@
-# markdown-asssitant README
+# Markdown Assistant
 
-This is the README for your extension "markdown-asssitant". After writing up a brief description, we recommend including the following sections.
+Markdown Assistant is a Visual Studio Code extension designed to enhance your Markdown writing experience using Azure OpenAI. With this tool, you can easily select text and generate AI-powered enhancements or continuations directly within the editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Enhance or continue selected Markdown text using Azure OpenAI.
+- Inline display of original and enhanced text with accept/reject buttons.
+- Configurable Azure OpenAI settings (API key, endpoint, deployment name).
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Visit the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+2. Search for Markdown Assistant.
+3. Click `Install` to add the extension.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Configuration
 
-## Requirements
+To use the Markdown Assistant extension, you need to configure your Azure OpenAI settings:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open the settings in VS Code (`Ctrl+,` or `Cmd+,` on macOS).
+2. Search for Markdown Assistant or navigate to `Extensions > Markdown Assistant`.
+3. Set the following configuration options:
+   - **API Key**: Your Azure OpenAI API key.
+   - **Endpoint**: Your Azure OpenAI endpoint.
+   - **Deployment Name**: Your Azure OpenAI deployment name.
 
-## Extension Settings
+Alternatively, you can set these options directly in your `settings.json` file.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Usage
 
-For example:
+![](./images/sample.png)
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. Select the text you wish to enhance or continue writing in your Markdown file.
+2. Click `Improve Writing` to enhance the selected text; this will fix any typos or grammatical issues.
+3. Click `Continue Writing` to expand the text based on your selection.
+4. Choose `Accept` or `Reject` for the generated recommendation.

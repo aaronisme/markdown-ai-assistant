@@ -1,44 +1,53 @@
 {
-  "name": "markdown-asssitant",
-  "displayName": "markdown-asssitant",
-  "description": "ai markdown assitant",
+  "name": "markdown-assistant",
+  "displayName": "Markdown Assistant",
+  "description": "Your AI markdown assistant to power your writing",
+  "icon": "images/icon.png",
   "version": "0.0.1",
+  "publisher": "aaronchen",
+  "repository": "https://github.com/aaronisme/markdown-assistant",
   "engines": {
     "vscode": "^1.92.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [  
-    "onLanguage:markdown"  
-  ],  
-  "main": "./dist/extension.js",  
-  "contributes": {  
-    "commands": [  
-      {  
-        "command": "markdown-modifier.modify",  
-        "title": "Modify Selected Text"  
-      },  
-      {  
-        "command": "markdown-modifier.extend",  
-        "title": "Extend Selected Text"  
-      }  
-    ],  
-    "menus": {  
-      "editor/context": [  
-        {  
-          "when": "editorLangId == markdown && editorHasSelection",  
-          "command": "markdown-modifier.modify",  
-          "group": "navigation"  
-        },  
-        {  
-          "when": "editorLangId == markdown && editorHasSelection",  
-          "command": "markdown-modifier.extend",  
-          "group": "navigation"  
-        }  
-      ]  
-    }  
-  },  
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "markdown-modifier.modify",
+        "title": "Modify Selected Text"
+      },
+      {
+        "command": "markdown-modifier.extend",
+        "title": "Extend Selected Text"
+      }
+    ],
+    "configuration": {
+      "title": "Markdown Assistant",
+      "properties": {
+        "markdownModifier.azureOpenAIApiKey": {
+          "type": "password",
+          "default": "",
+          "description": "API key for Azure OpenAI"
+        },
+        "markdownModifier.azureOpenAIEndpoint": {
+          "type": "string",
+          "default": "",
+          "description": "Endpoint URL for Azure OpenAI"
+        },
+        "markdownModifier.azureOpenAIDeploymentName": {
+          "type": "string",
+          "default": "",
+          "description": "Deployment name for Azure OpenAI"
+        }
+      }
+    }
+  },
   "scripts": {
     "vscode:prepublish": "yarn run package",
     "compile": "webpack",
@@ -51,17 +60,20 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.92.0",
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.11.0",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
-    "ts-loader": "^9.5.1",
-    "webpack": "^5.92.1",
-    "webpack-cli": "^5.1.4",
     "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.6"
   }
 }
