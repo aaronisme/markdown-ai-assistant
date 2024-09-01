@@ -1,6 +1,6 @@
-# Markdown Assistant
+# Markdown AI Assistant
 
-Markdown Assistant is a Visual Studio Code extension designed to enhance your Markdown writing experience using Azure OpenAI. With this tool, you can easily select text and generate AI-powered enhancements or continuations directly within the editor.
+Markdown AI Assistant is a Visual Studio Code extension designed to enhance your Markdown writing experience using Azure OpenAI. With this tool, you can easily select text and generate AI-powered enhancements or continuations directly within the editor.
 
 ## Features
 
