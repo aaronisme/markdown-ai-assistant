@@ -29,7 +29,7 @@ Alternatively, you can set these options directly in your `settings.json` file.
 
 ## Usage
 
-![](./images/sample.png)
+![](https://raw.githubusercontent.com/aaronisme/markdown-assistant/main/images/sample.png)
 
 1. Select the text you wish to enhance or continue writing in your Markdown file.
 2. Click `Improve Writing` to enhance the selected text; this will fix any typos or grammatical issues.
