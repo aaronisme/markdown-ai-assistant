@@ -11,7 +11,7 @@ Markdown AI Assistant is a Visual Studio Code extension designed to enhance your
 ## Installation
 
 1. Visit the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
-2. Search for Markdown Assistant.
+2. Search for Markdown AI Assistant.
 3. Click `Install` to add the extension.
 
 ## Configuration
